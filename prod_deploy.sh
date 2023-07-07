@@ -11,7 +11,7 @@ msg "Stopping app"
 sudo pkill app
 
 msg "Pulling from GitHub"
-git pull
+git pull https://github.com/msrodgers79/app.git
 
 msg "Building Go binary"
 go build
