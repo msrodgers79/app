@@ -14,7 +14,7 @@ msg "Pulling from GitHub"
 git pull https://github.com/msrodgers79/app.git
 
 msg "Building Go binary"
-go build
+go build -x main.go
 
 msg "Starting server"
 nohup sudo ./app &>/dev/null &
