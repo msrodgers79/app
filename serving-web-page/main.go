@@ -47,8 +47,8 @@ func main() {
 	} else if serverEnv == "PROD" {
 		http.ListenAndServeTLS(
 			":443",
-			"/etc/letsencrypt/live/app.msrodgers.co.uk/fullchain.pem",
-			"/etc/letsencrypt/live/app.msrodgers.co.uk/privkey.pem",
+			"/etc/letsencrypt/live/app.jurajmajerik.com/fullchain.pem",
+			"/etc/letsencrypt/live/app.jurajmajerik.com/privkey.pem",
 			nil,
 		)
 	}

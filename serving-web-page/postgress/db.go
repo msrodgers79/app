@@ -7,14 +7,14 @@ import (
 	_ "github.com/lib/pq"
 )
 
-// gobal DB variable
+// Global DB variable
 var Connection *sql.DB
 
-// initialDB creates a new instanmce of DB
+// initDB creates a new instance of DB
 func InitDB() {
 	connStr := fmt.Sprintf(
 		"user=%s password=%s host=%s port=%d dbname=%s sslmode=disable",
-		"postgres", "mysecretpassword", "localhost", 5432, "postgres",
+		"postgres", "mysecretpassword", "db", 5432, "postgres",
 	)
 
 	var err error
